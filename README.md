@@ -7,7 +7,7 @@
 <br />
 
 <div align="center">
-<a href="https://arxiv.org/abs/2506.12000" target="_blank">
+<a href="https://arxiv.org/abs/2506.12000" target="blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-OVR-red?logo=arxiv" height="20" />
 </a>
 <a href="https://huggingface.co/ovr" target="_blank">
