@@ -7,11 +7,11 @@
 <div align="center">
 <a href="https://arxiv.org/abs/2506.12000" target="blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-OVR-red?logo=arxiv" height="20" />
-</a><a href="https://huggingface.co/ovr" target="_blank">
+</a><a href="https://huggingface.co/ovr" target="blank">
     <img alt="HF Model: OVR" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-OVR-orange?color=orange&logoColor=white" height="20" />
-</a><a href="https://huggingface.co/datasets/ovr" target="_blank">
+</a><a href="https://huggingface.co/datasets/ovr" target="blank">
     <img alt="Dataset: OVR" src="https://img.shields.io/badge/%F0%9F%97%84%EF%B8%8F%20_Dataset-OVR-blue?color=blue&logoColor=white" height="20" />
-</a><a href="https://huggingface.co/spaces/ovr/demo" target="_blank">
+</a><a href="https://huggingface.co/spaces/ovr/demo" target="blank">
     <img alt="Demo: OVR" src="https://img.shields.io/badge/%F0%9F%9A%80%20_Demo-OVR-green?color=green&logoColor=white" height="20" />
 </a>
 </div>
