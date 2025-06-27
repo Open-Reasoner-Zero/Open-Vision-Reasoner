@@ -1,27 +1,23 @@
 <div align="center" style="font-family: charter;">
 
-<h1><img src="assets/logo.png" width="2%"/> <i>Open Vision Reasoner</i>:<br/>Transferring Linguistic Cognitive Behavior for Visual Reasoning</h1>
-
-<img src="assets/preview.png" width="100%"/>
+<h1><img src="assets/logo.png" width="3%"/> <i>Open Vision Reasoner</i>:<br/>Transferring Linguistic Cognitive Behavior for Visual Reasoning</h1>
 
 <br />
 
 <div align="center">
 <a href="https://arxiv.org/abs/2506.12000" target="blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-OVR-red?logo=arxiv" height="20" />
-</a>
-<a href="https://huggingface.co/ovr" target="_blank">
+</a><a href="https://huggingface.co/ovr" target="_blank">
     <img alt="HF Model: OVR" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-OVR-orange?color=orange&logoColor=white" height="20" />
-</a>
-<a href="https://huggingface.co/datasets/ovr" target="_blank">
+</a><a href="https://huggingface.co/datasets/ovr" target="_blank">
     <img alt="Dataset: OVR" src="https://img.shields.io/badge/%F0%9F%97%84%EF%B8%8F%20_Dataset-OVR-blue?color=blue&logoColor=white" height="20" />
-</a>
-<a href="https://huggingface.co/spaces/ovr/demo" target="_blank">
+</a><a href="https://huggingface.co/spaces/ovr/demo" target="_blank">
     <img alt="Demo: OVR" src="https://img.shields.io/badge/%F0%9F%9A%80%20_Demo-OVR-green?color=green&logoColor=white" height="20" />
 </a>
 </div>
 
 </div>
+<img src="assets/preview.png" width="100%"/>
 
 ## 📖 Overview
 
@@ -134,28 +130,6 @@ Our training framework consists of three sequential stages built upon Qwen2.5-VL
 - [ ] 📚: Release detailed training documentation and tutorials.
 - [ ] 🎯: Release evaluation scripts and benchmark implementations.
 - [ ] 🔍: Release cognitive behavior analysis toolkit.
-
-## 🔬 Key Insights
-
-### **Fundamental Findings**
-
-1. **Cross-modal Cognitive Transfer**: Language-only cold-start is sufficient to induce robust cognitive behaviors that naturally generalize to multimodal tasks without explicit visual supervision
-
-2. **RL Amplification Effect**: Large-scale multimodal RL further strengthens and activates these behaviors for visual-centric reasoning, increasing behavior transfer rate from 43.8% to 54.2%
-
-3. **Emergent Visual Behaviors**: Four distinct visual-specific cognitive behaviors emerge naturally, representing genuine visual reasoning patterns beyond linguistic behaviors
-
-### **Limitations and Future Work**
-
-**Current Limitations:**
-- **Perception-Reasoning Trade-off**: Enhanced reasoning capabilities come with slight degradation in basic perception tasks (MME perception: 1669.3 → 1547.1)
-- **Multimodal RL Scaling**: Unlike language RL's linear token growth, multimodal RL shows reward improvement without corresponding length scaling, suggesting fundamental capability gaps
-
-**Future Directions:**
-- Integration of multi-turn RL with agentic tool-use frameworks
-- Incorporation of intrinsic imagination through mental visual representations
-- Enhanced multimodal data curation and refined reward design
-- Development of more sophisticated visual cognitive behaviors
 
 ## 🙏 Acknowledgments
 
