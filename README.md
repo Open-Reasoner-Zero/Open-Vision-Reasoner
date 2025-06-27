@@ -78,18 +78,8 @@ Our model demonstrates exceptional cross-modal transfer, significantly outperfor
 We conduct comprehensive analysis of cognitive behavior emergence and transfer throughout the training pipeline.
 
 <p align="center">
-  <img width="95%" src="figures/behavior_transfer.png">
+  <img width="95%" src="assets/behavior_transfer.png">
 </p>
-
-<p align="center">
-  <img width="95%" src="figures/cognitive_behavior_analysis.png">
-</p>
-
-| Training Stage | Backtracking | Verification | Subgoal Setting | Backward Chaining | Avg CBR | BTR |
-|----------------|--------------|--------------|-----------------|-------------------|---------|-----|
-| Base Model | 39.7% → 4.0% | 29.6% → 2.0% | 30.0% → 0.0% | 0.8% → 0.0% | 25.0% → 1.5% | 0.060 |
-| +Cold Start | 93.7% → 57.1% | 84.0% → 16.0% | 74.0% → 22.0% | 2.0% → 16.0% | 63.4% → 27.8% | 0.438 |
-| +Multimodal RL | 98.0% → 75.0% | 86.8% → 22.0% | 77.5% → 24.0% | 3.1% → 23.0% | 66.4% → 36.0% | 0.542 |
 
 > [!IMPORTANT]
 > Visual cognitive behaviors emerge naturally from language-trained reasoning patterns and are significantly amplified through large-scale multimodal RL training.
