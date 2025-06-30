@@ -1,6 +1,6 @@
 <div align="center" style="font-family: charter;">
 
-<h1><img src="assets/logo.png" width="3%"/> <i>Open Vision Reasoner</i>:<br/>Transferring Linguistic Cognitive Behavior for Visual Reasoning</h1>
+<h1><img src="assets/logo.jpg" width="3%"/> <i>Open Vision Reasoner</i>:<br/>Transferring Linguistic Cognitive Behavior for Visual Reasoning</h1>
 
 <br />
 
