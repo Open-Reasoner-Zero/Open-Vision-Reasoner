@@ -5,11 +5,11 @@
 <br />
 
 <div align="center">
-<a href="https://arxiv.org/abs/2506.12000" target="blank">
+<a href="https://arxiv.org/abs/2506.12000" target="blank" style="margin-right: 10px;">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-OVR-red?logo=arxiv" height="20" />
-</a><a href="https://huggingface.co/ovr" target="blank">
+</a><a href="https://huggingface.co/ovr" target="blank" style="margin-right: 10px;">
     <img alt="HF Model: OVR" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-OVR-fb8740?&logoColor=white" height="20" />
-</a><a href="https://huggingface.co/datasets/ovr" target="blank">
+</a><a href="https://huggingface.co/datasets/ovr" target="blank" style="margin-right: 10px;">
     <img alt="Dataset: OVR" src="https://img.shields.io/badge/%F0%9F%97%84%EF%B8%8F%20_Dataset-OVR-48b9d0?&logoColor=white" height="20" />
 </a><a href="https://huggingface.co/spaces/ovr/demo" target="blank">
     <img alt="Demo: OVR" src="https://img.shields.io/badge/%F0%9F%9A%80%20_Demo-OVR-9368AB?&logoColor=white" height="20" />
