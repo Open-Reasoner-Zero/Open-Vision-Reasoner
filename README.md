@@ -50,12 +50,12 @@ OVR develops a repertoire of genuine visual cognitive behaviors, including re-in
 
 ## 🚀 Model Release
 
-> Models are available at [Huggingface Collections: Open-Vision-Reasoner](https://huggingface.co/collections/ovr-models). We release the intermediate cold-start model and the final RL-tuned OVR model to facilitate further research.
+> Models are available at [Huggingface Collections: Open-Vision-Reasoner](https://huggingface.co/collections/Kangheng/ovr-686646849f9b43daccbe2fe0). We release the intermediate cold-start model and the final RL-tuned OVR model to facilitate further research.
 
 | **Model** | **Description** | **Download** |
 |:---------:|:---------------:|:------------:|
-| OVR-7B-ColdStart | Intermediate model after massive language-only cold-start fine-tuning | [🤗 OVR-7B-ColdStart](https://huggingface.co/ovr/OVR-7B-ColdStart) |
-| OVR-7B-RL | Final model after large-scale multimodal RL training | [🤗 OVR-7B-RL](https://huggingface.co/ovr/OVR-7B-RL) |
+| OVR-7B-ColdStart | Intermediate model after massive language-only cold-start fine-tuning | [🤗 OVR-7B-ColdStart](https://huggingface.co/Kangheng/OVR-7B-ColdStart) |
+| OVR-7B-RL | Final model after large-scale multimodal RL training | [🤗 OVR-7B-RL](https://huggingface.co/Kangheng/OVR-7B-RL) |
 
 ## 📊 Performance Results
 
@@ -104,7 +104,7 @@ Our methodology builds upon the robust Qwen2.5-VL-7B foundation model, applying 
 ## 📊 Training Dynamics and Performance Evolution
 
 <p align="center">
-  <img width="45%" src="assets/cold_start_dynamics.png">
+  <img width="45%" src="assets/coldstart_dynamic.png">
   <img width="45%" src="assets/rl_dynamics.png">
 </p>
 
