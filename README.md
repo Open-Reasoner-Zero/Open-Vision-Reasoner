@@ -2,7 +2,6 @@
 
 <img src="assets/title.png" width="100%"/>
 
----
 <br />
 
 <div align="center">
@@ -18,10 +17,11 @@
 </div>
 
 </div>
-<img src="assets/preview.png" width="100%"/>
+
 
 ## 📖 Overview
 
+<img src="assets/preview.png" width="100%"/>
 At the heart of **Open Vision Reasoner (OVR)** lies a simple yet powerful discovery: the sophisticated reasoning abilities of language models can be directly transferred to unlock advanced visual reasoning.
 
 We find that a Multimodal Large Language Model (MLLM), when first subjected to a massive "cold-start" fine-tuning phase using only text-based reasoning data, surprisingly develops cognitive patterns that seamlessly generalize to the visual domain. Subsequent reinforcement learning then activates and refines these behaviors, leading to state-of-the-art performance.
