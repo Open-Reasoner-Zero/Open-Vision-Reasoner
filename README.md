@@ -2,6 +2,7 @@
 
 <img src="assets/title.png" width="100%"/>
 
+---
 <br />
 
 <div align="center">
