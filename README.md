@@ -9,48 +9,29 @@
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-OVR-red?logo=arxiv" height="20" />
 </a><a href="https://huggingface.co/ovr" target="blank" style="margin-right: 10px;">
     <img alt="HF Model: OVR" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-OVR-fb8740?&logoColor=white" height="20" />
-</a><a href="https://huggingface.co/datasets/ovr" target="blank" style="margin-right: 10px;">
-    <img alt="Dataset: OVR" src="https://img.shields.io/badge/%F0%9F%97%84%EF%B8%8F%20_Dataset-OVR-48b9d0?&logoColor=white" height="20" />
-</a><a href="https://huggingface.co/spaces/ovr/demo" target="blank">
-    <img alt="Demo: OVR" src="https://img.shields.io/badge/%F0%9F%9A%80%20_Demo-OVR-9368AB?&logoColor=white" height="20" />
+</a><a href="" target="blank">
+    <img alt="Demo(coming soon): OVR" src="https://img.shields.io/badge/%F0%9F%9A%80%20_Demo(coming soon)-OVR-9368AB?&logoColor=white" height="20" />
 </a>
-</div>
-
 </div>
 
 
 ## 📖 Overview
 
 <img src="assets/preview.png" width="100%"/>
-At the heart of **Open Vision Reasoner (OVR)** lies a simple yet powerful discovery: the sophisticated reasoning abilities of language models can be directly transferred to unlock advanced visual reasoning.
 
-We find that a Multimodal Large Language Model (MLLM), when first subjected to a massive "cold-start" fine-tuning phase using only text-based reasoning data, surprisingly develops cognitive patterns that seamlessly generalize to the visual domain. Subsequent reinforcement learning then activates and refines these behaviors, leading to state-of-the-art performance.
+The remarkable reasoning capbility of Large Language Models (LLMs) stems from cognitive behaviors that emerge when reinforcing against verifiable rewards. This work investigates how to transfer this principle to Multimodal LLMs (MLLMs) to unlock **advanced visual reasoning**.
 
-Our two-stage paradigm involves:
+We introduce a two-stage paradigm built on Qwen2.5-VL-7B: a massive **text-only cold-start fine-tuning**, followed by **multimodal reinforcement learning** (RL) spanning nearly 1,000 steps—surpassing all prior open-source efforts in scale. This pioneering work reveals three fundamental insights: 
 
-1. A **linguistic cold-start**, fine-tuning the model on over 2 million language-only reasoning examples to instill foundational cognitive behaviors.
+1. Behavior transfer emerges surprisingly early in cold start due to linguistic mental imagery. 
+2. Cold start broadly memorizes visual behaviors, while RL critically discerns and scales up effective patterns. 
+3. Transfer strategically favors high-utility behaviors such as visual reflection. 
 
-2. Followed by **large-scale multimodal reinforcement learning (RL)**, which activates and adapts these behaviors for visual tasks using over 300,000 mixed-modality examples.
-
-This work culminates in the largest open-source RL effort on a 7B-scale MLLM, validating our core hypothesis: **linguistic cognition is a powerful scaffold for visual intelligence**.
-
-## 🔍 Key Discoveries
-
-### Linguistic Cognition Transfers to Vision
-
-A language-only cold-start is sufficient to elicit robust cognitive patterns that transfer to vision without direct multimodal training. This allows the model to develop a foundational reasoning capability that is modality-agnostic.
-
-### RL Amplifies and Activates Behaviors
-
-Subsequent multimodal RL acts as a catalyst, significantly amplifying these nascent cognitive abilities. We show that a simple, rule-based reward signal (binary correctness) is enough to strengthen these patterns and correlate their presence with higher reasoning accuracy.
-
-### Emergence of Genuine Visual Reasoning
-
-OVR develops a repertoire of genuine visual cognitive behaviors, including re-inspection (2.5%), decomposition (22.0%), cross-checking (0.2%), and goal-driven tracing (8.4%). This results in a Behavior Transfer Rate (BTR) of 54.2% from language to vision, demonstrating highly efficient cross-modal generalization.
+Our resulting model, Open-Vision-Reasoner (OVR), achieves state-of-the-art performance on a suite of reasoning benchmarks, including **95.3%** on MATH500, **51.8%** on MathVision and **54.6%** on MathVerse. We release our model, data, and training dynamics to catalyze the development of more capable, behavior-aligned multimodal reasoners.
 
 ## 🚀 Model Release
 
-> Models are available at [Huggingface Collections: Open-Vision-Reasoner](https://huggingface.co/collections/Kangheng/ovr-686646849f9b43daccbe2fe0). We release the intermediate cold-start model and the final RL-tuned OVR model to facilitate further research.
+> Models are available at Huggingface Collections: [Open-Vision-Reasoner](https://huggingface.co/collections/Kangheng/ovr-686646849f9b43daccbe2fe0). We release the intermediate cold-start model and the final RL-tuned OVR model to facilitate further research.
 
 | **Model** | **Description** | **Download** |
 |:---------:|:---------------:|:------------:|
@@ -80,26 +61,22 @@ Crucially, these linguistic skills translate into state-of-the-art performance o
 Our analysis systematically tracks the emergence of cognitive behaviors, confirming that they are learned during the cold-start and amplified by RL.
 
 <p align="center">
-  <img width="95%" src="assets/behavior_transfer.png">
+  <img width="45%" src="assets/transfer-a.png">
+  <img width="46%" src="assets/transfer-b.png">
 </p>
 
 > [!IMPORTANT]
 > Linguistic cognitive patterns, once established, can be powerfully transferred and amplified for visual reasoning through targeted reinforcement learning.
 
-## 🔧 Training Framework
+## 🔧 Training Pipeline
 
-Our methodology builds upon the robust Qwen2.5-VL-7B foundation model, applying a sequential two-stage training process:
+To facilitate efficient cognitive development and cross-modal generalization, we employ the popular "RL with a cold start" paradigm with two sequential training stages:
 
-**Stage 1: Linguistic Cold-Start**  
-- Supervised fine-tuning on over 2 million language-only reasoning examples
-- Distilled responses from DeepSeek-R1 for high-quality cognitive pattern learning
-- Establishes foundational linguistic cognitive behaviors through extensive iterations
+**Stage 1: Linguistic Cold Start**  
+The LLM module is supervised fine-tuned on language-only reasoning datasets distilled from DeepSeek-R1, establishing core cognitive behaviors such as backtracking and subgoal decomposition within a purely linguistic setting.
 
-**Stage 2: Multimodal Reinforcement Learning**
-- PPO-based reinforcement learning on 300,000+ mixed-modality examples
-- Vanilla PPO with GAE (γ=1, λ=1) for stable long-term reasoning
-- Binary rule-based rewards focusing solely on correctness
-- Nearly 1,000 update steps representing the largest open-source RL effort on 7B multimodal models
+**Stage 2: Multimodal RL**
+We apply reinforcement learning with Open-Reasoner-Zero setting on both text and multimodal tasks using verifiable match rewards. This promotes reasoning generalization and aligns previously learned cognitive patterns with visual contexts, enabling effective cross-modal transfer.
 
 ## 📊 Training Dynamics and Performance Evolution
 
@@ -109,18 +86,19 @@ Our methodology builds upon the robust Qwen2.5-VL-7B foundation model, applying 
 </p>
 
 <p align="center">
-  <img width="90%" src="assets/performance.png">
+  <img width="100%" src="assets/performance.png">
 </p>
 
 ## 📋 Roadmap
 
-- [x] `2025-06-30` 🎄: Initial release of OVR models, training data, and research paper.
-- [ ] 🔧: Release training code.
+- [x] `2025-07-04` 🎄: Initial release of OVR models, and research paper.
+- [ ] 📊: Release of OVR training data.
 - [ ] 🚀: Continuously iterate on models and data to release more powerful versions of OVR. Stay tuned!
-
-## 🙏 Acknowledgments
-
 
 ## 📚 Citation
 
 If you find our work useful for your research, please consider citing our paper:
+```bibtex
+
+```
+
