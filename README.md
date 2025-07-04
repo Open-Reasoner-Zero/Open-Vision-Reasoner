@@ -81,8 +81,8 @@ We apply reinforcement learning with Open-Reasoner-Zero setting on both text and
 ## 📊 Training Dynamics and Performance Evolution
 
 <p align="center">
-  <img width="45%" src="assets/coldstart_dynamic.png">
-  <img width="45%" src="assets/rl_dynamics.png">
+  <img width="50%" src="assets/coldstart_dynamic.png">
+  <img width="50%" src="assets/rl_dynamics.png">
 </p>
 
 <p align="center">
