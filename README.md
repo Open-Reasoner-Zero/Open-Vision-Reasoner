@@ -31,7 +31,7 @@ Our resulting model, Open-Vision-Reasoner (OVR), achieves state-of-the-art perfo
 
 ## 🚀 Model Release
 
-> Models are available at Huggingface Collections: [Open-Vision-Reasoner](https://huggingface.co/collections/Kangheng/ovr-686646849f9b43daccbe2fe0). We release the intermediate cold-start model and the final RL-tuned OVR model to facilitate further research.
+> Models are available at Huggingface Collections: [Open-Vision-Reasoner](https://huggingface.co/collections/Kangheng/ovr-686646849f9b43daccbe2fe0). We release the cold-start model and the final RL-tuned OVR model to facilitate further research.
 
 | **Model** | **Description** | **Download** |
 |:---------:|:---------------:|:------------:|
@@ -42,15 +42,17 @@ Our resulting model, Open-Vision-Reasoner (OVR), achieves state-of-the-art perfo
 
 ### **Language Reasoning**
 
-The initial cold-start phase equips OVR with formidable language reasoning capabilities, outperforming all open-source 7B models on key math and logic benchmarks.
-
+Our model demonstrates exceptional language reasoning capabilities. On the challenging AIME 2024 and 2025 benchmarks, it dramatically surpasses other 7B open-source models by an average of over 10%, achieving performance comparable to leading 32B models. This superiority extends to general reasoning tasks, with significant gains of +4.6% on MMLU and +10.4% on MMLU-Pro over parameter-matched competitors. These results highlight the effectiveness of our curated, high-quality cold-start training data.
 <p align="center">
   <img width="95%" src="assets/language_benchmarks.png">
 </p>
 
 ### **Visual Reasoning**
 
-Crucially, these linguistic skills translate into state-of-the-art performance on visual reasoning tasks, validating the effectiveness of our cognitive transfer approach.
+OVR represents a significant breakthrough for 7B-scale models in visual reasoning.
+It is the first post-trained Qwen2.5-VL-7B model to surpass the 50% threshold on MathVision, while also achieving state-of-the-art performance among 7B models on DynaMath and MathVerse.
+This strong overall performance is further underscored by a substantial gain on MMMU-Pro (+7.2%) over previous methods.
+These results demonstrate that reasoning capabilities acquired through language training can effectively transfer to multimodal tasks, resulting in notable improvements in visual reasoning performance.
 
 <p align="center">
   <img width="95%" src="assets/visual_benchmarks.png">
@@ -58,7 +60,7 @@ Crucially, these linguistic skills translate into state-of-the-art performance o
 
 ### **Cognitive Behavior Analysis**
 
-Our analysis systematically tracks the emergence of cognitive behaviors, confirming that they are learned during the cold-start and amplified by RL.
+Our analysis centers on the four pivotal visual cognitive behaviors. We systematically investigate how these patterns are transferred to visual modality from their linguistic counterparts. 
 
 <p align="center">
   <img width="45%" src="assets/transfer-a.png">
@@ -66,7 +68,9 @@ Our analysis systematically tracks the emergence of cognitive behaviors, confirm
 </p>
 
 > [!IMPORTANT]
-> Linguistic cognitive patterns, once established, can be powerfully transferred and amplified for visual reasoning through targeted reinforcement learning.
+> Visual behaviors emerge remarkably early from cold start.
+> Cold-start learns broadly, large-scale RL discerns critically.
+> Visual transfer of cognitive behaviors is strategic.
 
 ## 🔧 Training Pipeline 
 
