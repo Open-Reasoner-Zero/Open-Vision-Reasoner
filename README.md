@@ -67,10 +67,7 @@ Our analysis centers on the four pivotal visual cognitive behaviors. We systemat
   <img width="46%" src="assets/transfer-b.png">
 </p>
 
-> [!IMPORTANT]
-> Visual behaviors emerge remarkably early from cold start. <br>
-> Cold-start learns broadly, large-scale RL discerns critically. <br>
-> Visual transfer of cognitive behaviors is strategic.
+
 
 ## 🔧 Training Pipeline 
 
