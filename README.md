@@ -68,7 +68,7 @@ Our analysis systematically tracks the emergence of cognitive behaviors, confirm
 > [!IMPORTANT]
 > Linguistic cognitive patterns, once established, can be powerfully transferred and amplified for visual reasoning through targeted reinforcement learning.
 
-## 🔧 Training Pipeline
+## 🔧 Training Pipeline 
 
 To facilitate efficient cognitive development and cross-modal generalization, we employ the popular "RL with a cold start" paradigm with two sequential training stages:
 
