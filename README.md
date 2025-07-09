@@ -100,6 +100,15 @@ We apply reinforcement learning with Open-Reasoner-Zero setting on both text and
 
 If you find our work useful for your research, please consider citing our paper:
 ```bibtex
+@misc{wei2025openvisionreasonertransferring,
+      title={Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for Visual Reasoning}, 
+      author={Yana Wei and Liang Zhao and Jianjian Sun and Kangheng Lin and Jisheng Yin and Jingcheng Hu and Yinmin Zhang and En Yu and Haoran Lv and Zejia Weng and Jia Wang and Chunrui Han and Yuang Peng and Qi Han and Zheng Ge and Xiangyu Zhang and Daxin Jiang and Vishal M. Patel},
+      year={2025},
+      eprint={2507.05255},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.05255}, 
+}
 
 ```
 
