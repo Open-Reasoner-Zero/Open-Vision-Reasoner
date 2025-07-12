@@ -5,6 +5,9 @@
 <br />
 
 <div align="center">
+<a href="https://weiyana.github.io/Open-Vision-Reasoner/" target="_blank" style="margin-right: 10px;">
+    <img alt="Project Page" src="https://img.shields.io/badge/Project%20Page-Open--Vision--Reasoner-blue?logo=github" height="20" />
+</a>
 <a href="https://github.com/linkangheng/Open-Vision-Reasoner/tree/main/paper/Open-Vision-Reasoner.pdf" target="blank" style="margin-right: 10px;">
     <img alt="arXiv" src="https://img.shields.io/badge/Paper-OVR-red?logo=arxiv" height="20" />
 </a><a href="https://huggingface.co/collections/Kangheng/ovr-686646849f9b43daccbe2fe0" target="blank" style="margin-right: 10px;">
