@@ -96,7 +96,7 @@ We apply reinforcement learning with Open-Reasoner-Zero setting on both text and
 ## 📋 Roadmap
 
 - [x] `2025-07-04` 🎄: Initial release of OVR models, and research paper.
-- [ ] 📊: Release of OVR training data.
+- [x] `2025-09-06` 📊: Release OVR cold-start data.
 - [ ] 🚀: Continuously iterate on models and data to release more powerful versions of OVR. Stay tuned!
 
 ## 📚 Citation
