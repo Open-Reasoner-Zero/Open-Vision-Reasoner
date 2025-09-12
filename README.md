@@ -12,8 +12,8 @@
     <img alt="arXiv" src="https://img.shields.io/badge/Paper-OVR-red?logo=arxiv" height="20" />
 </a><a href="https://huggingface.co/collections/Kangheng/ovr-686646849f9b43daccbe2fe0" target="blank" style="margin-right: 10px;">
     <img alt="HF Model: OVR" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-OVR-fb8740?&logoColor=white" height="20" />
-</a><a href="" target="blank" style="margin-right: 10px;">
-    <img alt="Dataset: OVR" src="https://img.shields.io/badge/%F0%9F%97%84%EF%B8%8F%20_Dataset(coming)-OVR-48b9d0?&logoColor=white" height="20" />
+</a><a href="https://huggingface.co/datasets/Kangheng/OVR-Dataset-ColdStart" target="blank" style="margin-right: 10px;">
+    <img alt="Dataset: OVR" src="https://img.shields.io/badge/%F0%9F%97%84%EF%B8%8F%20_Dataset-OVR-48b9d0?&logoColor=white" height="20" />
 </a>
 </div>
 </div>
